@@ -1,4 +1,4 @@
-# Fenrir — Security Scan Platform
+# Fenrir  Security Scan Platform
 
 A modern frontend for an AI-powered security scanning platform. Built with React + Vite, it covers the full scan workflow: from login to live scan monitoring.
 
@@ -8,9 +8,9 @@ A modern frontend for an AI-powered security scanning platform. Built with React
 
 Three main screens, all fully responsive and theme-aware:
 
-- **Login** — clean split-panel signup with social login (Apple, Google, Meta) and client-side validation
-- **Dashboard** — live overview of all scans, severity breakdown, and a searchable/filterable scan table
-- **Scan Detail** — real-time scan progress with a step tracker, activity console, and a live finding log
+- **Login**  clean split-panel signup with social login (Apple, Google, Meta) and client-side validation
+- **Dashboard**  live overview of all scans, severity breakdown, and a searchable/filterable scan table
+- **Scan Detail**  real-time scan progress with a step tracker, activity console, and a live finding log
 
 ---
 
@@ -45,7 +45,7 @@ npm run dev
 
 Then open [http://localhost:5173](http://localhost:5173).
 
-You'll land on the login page. Fill in the form or just click one of the social login buttons — it'll take you straight to the dashboard.
+You'll land on the login page. Fill in the form or just click one of the social login buttons  it'll take you straight to the dashboard.
 
 ---
 
@@ -73,19 +73,19 @@ fenrir-scan/
 
 ## Features
 
-- **Dark / Light mode** — persisted to localStorage, toggleable from the sidebar
-- **Mobile responsive** — card-based list on mobile, full table on desktop; sidebar becomes a slide-in drawer
-- **Form validation** — inline errors for all fields; password strength, email format, terms checkbox
-- **Live console** — Activity Log and Verification Loops tabs with terminal-style output
-- **Finding log** — severity-tagged findings (Critical → High → Medium → Low) with timestamps
-- **Toast notifications** — feedback for scan stop, export, new scan, etc.
-- **Protected routes** — unauthenticated users are redirected to login
+- **Dark / Light mode**  persisted to localStorage, toggleable from the sidebar
+- **Mobile responsive**  card-based list on mobile, full table on desktop; sidebar becomes a slide-in drawer
+- **Form validation**  inline errors for all fields; password strength, email format, terms checkbox
+- **Live console**  Activity Log and Verification Loops tabs with terminal-style output
+- **Finding log**  severity-tagged findings (Critical → High → Medium → Low) with timestamps
+- **Toast notifications**  feedback for scan stop, export, new scan, etc.
+- **Protected routes**  unauthenticated users are redirected to login
 
 ---
 
 ## Customizing mock data
 
-Everything you see in the UI comes from `src/mock/data.js`. To change the scans, findings, or stats, just edit that file — no API calls needed.
+Everything you see in the UI comes from `src/mock/data.js`. To change the scans, findings, or stats, just edit that file  no API calls needed.
 
 ---
 
@@ -95,7 +95,7 @@ Everything you see in the UI comes from `src/mock/data.js`. To change the scans,
 npm run build
 ```
 
-The output goes to `dist/`. Drop it on Vercel, Netlify, or any static host — it just works.
+The output goes to `dist/`. Drop it on Vercel, Netlify, or any static host  it just works.
 
 ---
 
@@ -103,7 +103,7 @@ The output goes to `dist/`. Drop it on Vercel, Netlify, or any static host — i
 
 - This is a **frontend-only** implementation. There's no real backend, auth service, or live scan engine.
 - The mock data is intentionally realistic to make the UI feel alive during demos.
-- All components are functional — no class components, no Redux.
+- All components are functional  no class components, no Redux.
 
 ---
 
@@ -123,3 +123,4 @@ The output goes to `dist/`. Drop it on Vercel, Netlify, or any static host — i
 
 MIT
 
+---
