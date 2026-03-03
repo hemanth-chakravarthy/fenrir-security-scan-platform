@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-50: #E6FFFB;
+  --color-primary-100: #B2F5EA;
+  --color-primary-200: #81E6D9;
+  --color-primary-300: #4FD1C5;
+  --color-primary-400: #38B2AC;
+  --color-primary-500: #0CC8A8;
+  --color-primary-600: #0AAE92;
+  --color-primary-700: #088E78;
+  --color-primary-800: #066F5E;
+  --color-primary-900: #044F44;
+
+  --color-severity-critical: #EF4444;
+  --color-severity-high: #F97316;
+  --color-severity-medium: #F59E0B;
+  --color-severity-low: #10B981;
+
+  --color-dark-900: #0F0F0F;
+  --color-dark-800: #1A1A1A;
+  --color-dark-surface: #1F1F1F;
+  --color-dark-surface2: #252525;
+  --color-dark-border: #2A2A2A;
+  --color-dark-border2: #333333;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'Fira Code', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #1A1A1A;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #3A3A3A;
+  border-radius: 3px;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #4A4A4A;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 3px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.animate-fadeIn { animation: fadeIn 0.3s ease-out; }
+.animate-slideInRight { animation: slideInRight 0.3s ease-out; }
+.animate-pulse-dot { animation: pulse-dot 1.5s ease-in-out infinite; }
+.animate-spin-custom { animation: spin 1s linear infinite; }
+
+.font-console {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+.login-gradient {
+  background: radial-gradient(ellipse at 30% 60%, #0a3d35 0%, transparent 50%),
+              radial-gradient(ellipse at 70% 20%, #1a1a2e 0%, transparent 50%),
+              radial-gradient(ellipse at 80% 80%, #5c1a00 0%, transparent 50%),
+              radial-gradient(ellipse at 20% 90%, #0a2a1e 0%, transparent 40%),
+              #0D0D0D;
+}
+
+.progress-ring__circle {
+  transition: stroke-dashoffset 0.5s ease-in-out;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
