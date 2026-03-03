@@ -4,6 +4,9 @@ A modern frontend for an AI-powered security scanning platform. Built with React
 
 ---
 
+Loom Video: https://www.loom.com/share/ebb5c94adf3e4f0aaf2157b12c006e43
+Live Deployed URL: https://fenrir-security-scan-platform.vercel.app/login
+
 ## What's inside
 
 Three main screens, all fully responsive and theme-aware:
